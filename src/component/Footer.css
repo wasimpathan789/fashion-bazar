@@ -1,0 +1,43 @@
+.footer {
+  /* background-color: antiquewhite; */
+}
+.footer-top {
+  width: 100%;
+  gap: 3%;
+  border-bottom: 0.5px solid gray;
+  padding-bottom: 30px;
+}
+.f-about-us {
+  width: 250px;
+}
+.footer-top-left,
+.footer-top-right {
+  /* background-color: red; */
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 30px 10px !important;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .f-about-us {
+    width: 450px;
+  }
+  .footer-top-left,
+  .footer-top-right {
+    justify-content: space-between !important;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-top-right,
+  .footer-top-left {
+    flex-direction: column;
+  }
+  .f-about-us {
+    width: 100%;
+  }
+}

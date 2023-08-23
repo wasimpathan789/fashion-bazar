@@ -1,0 +1,77 @@
+.contactpage {
+  padding: 30px 80px;
+  display: flex;
+  gap: 60px;
+}
+
+.contactpage-right {
+  width: 50%;
+}
+.contactpage-left {
+  width: 50%;
+}
+
+.contact-phone {
+  min-width: 200px;
+}
+
+.contact-phone-icon {
+  border: 0.2px solid #ffbb38 !important;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.contact-address {
+  background-color: skyblue;
+  margin-top: 30px;
+  padding: 10px;
+  /* width: 100%; */
+}
+.formBlock {
+  width: 100%;
+}
+.formBlock > input {
+  width: auto;
+}
+.formBlock > textarea {
+  width: auto !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactpage {
+    padding: 30px 10px;
+    flex-direction: column;
+    /* width: 100%; */
+    /* background-color: gold; */
+  }
+  .contactpage-left {
+    width: 100%;
+  }
+  .contactpage-right {
+    /* background-color: red; */
+    padding: 30px 0px !important;
+    width: 100%;
+  }
+  /* .contactpage-right > form {
+    width: 100%;
+  } */
+  .formBlock {
+    width: 100%;
+  }
+  .formBlock > input {
+    width: auto;
+  }
+  .formBlock > textarea {
+    width: auto !important;
+  }
+  .contact-phone {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 1298px) {
+  .contact-phone-email {
+    flex-direction: column;
+  }
+}
