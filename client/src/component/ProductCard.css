@@ -1,0 +1,31 @@
+.product-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  /* height: auto; */
+  /* height: 450px; */
+  padding-bottom: 0px;
+}
+.p-c-image {
+  height: 250px;
+  object-fit: contain;
+}
+.p-c-image > img {
+  background-size: cover;
+  object-fit: contain;
+  /* width: 100%; */
+  width: 80%;
+  height: 100%;
+}
+.product-card-body > h4 {
+  height: 50px;
+}
+
+.card-overlay {
+  position: absolute;
+  /* background-color: red; */
+  /* width: 100%; */
+  display: flex;
+  left: 80%;
+
+  top: 30px;
+}

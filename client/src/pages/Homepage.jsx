@@ -5,7 +5,9 @@ import Products from "../features/products/Products";
 const Homepage = () => {
   return (
     <Layout>
-      <Products />
+      <div className="paddingClass ">
+        <Products />
+      </div>
     </Layout>
   );
 };

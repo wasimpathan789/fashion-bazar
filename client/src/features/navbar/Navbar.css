@@ -188,6 +188,7 @@
     top: 0;
     transition: all 2s ease-in;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    z-index: 11111111111111110656;
   }
   .wishlist {
     background-color: yellow !important;

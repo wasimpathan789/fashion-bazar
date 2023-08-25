@@ -28,7 +28,7 @@ const Termspage = () => {
   return (
     <Layout>
       <PageBanner title={"Terms & Condition"} />
-      <div className="px-20 py-6 ">
+      <div className="paddingClass ">
         {termsAndCondition.map((data, id) => (
           <div className="flex flex-col mt-6" key={id}>
             <p className="text-xl ">

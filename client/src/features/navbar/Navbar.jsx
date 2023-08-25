@@ -97,6 +97,7 @@ const Navbar = () => {
             <FaPersonDress /> <span>Mens</span>
           </Link>
         </div>
+
         <div className="nav-bottom-content flex gap-8 text-lg   ">
           <Link to={"/terms"}>Terms & Condition</Link>
           <Link to={"/contact"}>Contact Page</Link>
@@ -146,44 +147,33 @@ const Navbar = () => {
           <span className="vertical "></span>
           <Link>Main Menu</Link>
         </div>
+
         <ul className="category-list  flex flex-col items-start gap-4">
-          <li className="flex justify-start items-center bg-primary  ">
+          <li className="flex justify-start items-center   ">
+            <Link to={"/contact"} className="flex items-center">
+              <AiOutlineClose size={22} />
+              <span className="  ml-4 ">Contact Page</span>
+            </Link>
+          </li>
+          <li className="flex justify-start items-center   ">
+            <Link to={"/terms"} className="flex items-center">
+              <AiOutlineClose size={22} />
+              <span className="  ml-4 ">Terms & Condition</span>
+            </Link>
+          </li>
+          <li className="flex justify-start items-center ">
             <Link className="flex items-center">
               <AiOutlineClose size={22} />
               <span className="  ml-4 ">Mobile</span>
             </Link>
           </li>
-          <li className="flex justify-start items-center bg-primary  ">
+          <li className="flex justify-start items-center ">
             <Link className="flex items-center">
               <AiOutlineClose size={22} />
               <span className="  ml-4 ">Mobile</span>
             </Link>
           </li>
-          <li className="flex justify-start items-center bg-primary  ">
-            <Link className="flex items-center">
-              <AiOutlineClose size={22} />
-              <span className="  ml-4 ">Mobile</span>
-            </Link>
-          </li>
-          <li className="flex justify-start items-center bg-primary  ">
-            <Link className="flex items-center">
-              <AiOutlineClose size={22} />
-              <span className="  ml-4 ">Mobile</span>
-            </Link>
-          </li>
-          <li className="flex justify-start items-center bg-primary  ">
-            <Link className="flex items-center">
-              <AiOutlineClose size={22} />
-              <span className="  ml-4 ">Mobile</span>
-            </Link>
-          </li>
-          <li className="flex justify-start items-center bg-primary  ">
-            <Link className="flex items-center">
-              <AiOutlineClose size={22} />
-              <span className="  ml-4 ">Mobile</span>
-            </Link>
-          </li>{" "}
-          <li className="flex justify-start items-center bg-primary  ">
+          <li className="flex justify-start items-center   ">
             <Link className="flex items-center">
               <AiOutlineClose size={22} />
               <span className="  ml-4 ">Mobile</span>

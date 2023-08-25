@@ -12,7 +12,7 @@ const initialState = {
 export const fetchProductsAll = createAsyncThunk(
   "fetchProductsAll",
   async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const response = await fetch("https://fakestoreapi.com/products");
     return response.json();
   }
 );

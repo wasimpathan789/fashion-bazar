@@ -1,0 +1,24 @@
+.login-wrapper {
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    width: fit-content;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    height: 70vh !important;
+  }
+  .login-wrapper {
+    width: auto;
+    width: 90%;
+    box-shadow: none;
+  }
+  .login-wrapper > form {
+    width: fit-content;
+    width: 100%;
+  }
+}

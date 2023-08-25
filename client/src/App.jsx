@@ -5,15 +5,14 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import Loginpage from "./auth/Loginpage";
 import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
 import Contactpage from "./pages/Contactpage";
 import Termspage from "./pages/Termspage";
+import Login from "./features/auth/Login";
+import SignUp from "./features/auth/SignUp";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Routes>
@@ -21,6 +20,8 @@ function App() {
         <Route path="/*" element={<PageNotFound />} />
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/terms" element={<Termspage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
 
         <Route>
           <Route path="/category" element={<Homepage />} />
