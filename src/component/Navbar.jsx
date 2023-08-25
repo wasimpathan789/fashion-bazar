@@ -5,6 +5,7 @@ import { AiOutlineUser, AiOutlineHeart, AiOutlineClose } from "react-icons/ai";
 import { HiBars3CenterLeft } from "react-icons/hi2";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { FaPersonDress } from "react-icons/fa6";
 // import { FaMobileRetro } from "react-icons/fa";
 import { useState } from "react";
 
@@ -68,18 +69,33 @@ const Navbar = () => {
               : "nav-category-list flex flex-col   px-4 py-3 "
           }
         >
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
-          <Link>Fashion</Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
+          <Link to={"/"}>
+            <FaPersonDress /> <span>Mens</span>
+          </Link>
         </div>
         <div className="nav-bottom-content flex gap-8 text-lg   ">
           <Link to={"/terms"}>Terms & Condition</Link>
