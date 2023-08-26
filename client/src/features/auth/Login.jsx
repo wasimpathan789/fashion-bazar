@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./Login.css";
 import { useNavigate, Link } from "react-router-dom";
 
+import { useDispatch, useSelector } from "react-redux";
+
 const Login = () => {
+  const dispatch = useDispatch();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate("/");

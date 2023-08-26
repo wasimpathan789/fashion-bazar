@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link className="wishlist">
             <AiOutlineHeart size={30} />
           </Link>
-          <Link className="cart">
+          <Link to={"/cart"} className="cart">
             <span className="flex justify-center items-center text-2xl bg-primary">
               0
             </span>
@@ -161,10 +161,10 @@ const Navbar = () => {
               <span className="  ml-4 ">Terms & Condition</span>
             </Link>
           </li>
-          <li className="flex justify-start items-center ">
-            <Link className="flex items-center">
+          <li className="flex justify-start items-center   ">
+            <Link to={"/cart"} className="flex items-center">
               <AiOutlineClose size={22} />
-              <span className="  ml-4 ">Mobile</span>
+              <span className="  ml-4 ">Cart</span>
             </Link>
           </li>
           <li className="flex justify-start items-center ">
@@ -173,6 +173,7 @@ const Navbar = () => {
               <span className="  ml-4 ">Mobile</span>
             </Link>
           </li>
+
           <li className="flex justify-start items-center   ">
             <Link className="flex items-center">
               <AiOutlineClose size={22} />

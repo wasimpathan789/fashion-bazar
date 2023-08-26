@@ -5,12 +5,16 @@
 }
 
 @media screen and (max-width: 480px) {
-  .login-container {
+  .login-container,
+  .signup-container {
     width: fit-content;
     width: 100%;
     display: flex;
     overflow-x: hidden;
     height: 70vh !important;
+  }
+  .signup-container {
+    padding: 30px 10px !important;
   }
   .login-wrapper {
     width: auto;

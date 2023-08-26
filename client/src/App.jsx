@@ -11,6 +11,7 @@ import Contactpage from "./pages/Contactpage";
 import Termspage from "./pages/Termspage";
 import Login from "./features/auth/Login";
 import SignUp from "./features/auth/SignUp";
+import Cartpage from "./pages/Cartpage";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/*" element={<PageNotFound />} />
         <Route path="/contact" element={<Contactpage />} />
+        <Route path="/cart" element={<Cartpage />} />
+
         <Route path="/terms" element={<Termspage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

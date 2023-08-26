@@ -1,0 +1,134 @@
+.cart-payment {
+  /* border: 1px solid red; */
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.subtotal {
+  border-bottom: 1px solid blue;
+}
+
+.shipping-address {
+  /* border: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.address-content {
+  display: none;
+}
+
+.address-content-active {
+  display: block;
+}
+.cart-products {
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.quantity-btn {
+  width: fit-content;
+}
+.table {
+  /* border: 1px solid #ffbb38; */
+  overflow-x: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+.product-table {
+  background-color: #ffbb38;
+  /* width: 100%; */
+  width: fit-content;
+  padding: 20px;
+}
+.table-bg {
+  background-color: #ffbb38;
+}
+
+.second {
+  width: 500px;
+  /* border: 1px solid green; */
+}
+.sec {
+  width: 475px;
+}
+.thir {
+  width: 220px;
+}
+.second-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* padding: 20px; */
+}
+.second > img {
+  width: 60px;
+  height: 60px;
+}
+.table-content {
+  width: auto;
+  margin-bottom: 5px;
+  padding: 15px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+}
+.first {
+  /* background-color: red; */
+  width: 100px !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid green; */
+
+  align-items: center;
+}
+.third {
+  width: 250px !important;
+  /* text-align: center; */
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proceed {
+  width: 100%;
+}
+.proceed > button {
+  padding: 10px 30px;
+}
+/* responsive  */
+.m-table {
+  display: none;
+}
+.m-table-wrapper {
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.m-table-row {
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.m-table-row > img {
+  width: 80px;
+  height: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .cart-payment {
+    padding: 30px 10px;
+  }
+  .shipping {
+    padding: 0px !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  .m-table {
+    display: block;
+  }
+  .table {
+    display: none;
+  }
+  .proceed > button {
+    padding: 10px 30px;
+    width: 100%;
+  }
+}
