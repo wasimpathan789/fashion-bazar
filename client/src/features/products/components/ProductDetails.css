@@ -1,0 +1,91 @@
+.pd-left-top {
+  /* border: 1px solid blue; */
+  height: 450px;
+  position: relative;
+  background-color: wheat;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 10px;
+}
+.pd-left-top > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.pd-next-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  top: 50%;
+  left: -10px;
+}
+.pd-prev-icon {
+  right: -10px;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  top: 50%;
+}
+.pd-left-bottom {
+  display: flex;
+  gap: 10px;
+}
+.pd-image-grid {
+  /* border: 1px solid red; */
+  padding: 10px;
+  height: 100px;
+  gap: 30px;
+  border: 5px solid gray;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.pd-image-grid > img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .pd-container {
+    flex-direction: column;
+  }
+  .pd-image-grid {
+    display: flex;
+    width: 56%;
+    gap: 10px !important;
+    height: 120px;
+  }
+  .pd-image-grid > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 880px) {
+  .pd-image-grid {
+    width: 100%;
+    gap: 10px !important;
+    height: 120px;
+  }
+  .pd-image-grid > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pd-left-top {
+    height: auto;
+  }
+  .pd-left-top > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  .pd-image-grid {
+    height: 50px;
+    width: 90%;
+    width: 30px;
+    width: 100%;
+  }
+}

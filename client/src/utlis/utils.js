@@ -1,4 +1,2 @@
-export const FAKE_STORE = https://fakestoreapi.com/products;
+export const API_KEY = http://localhost:3004/products 
 
-
-export const TODOS = https://jsonplaceholder.typicode.com/todos,

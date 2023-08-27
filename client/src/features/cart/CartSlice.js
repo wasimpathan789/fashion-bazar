@@ -1,10 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  status: "idle",
-  isLoading: false,
-  isErro: false,
-  item: [],
+  cart: [],
+  totalQuantity: 0,
 };
 
 const CartSlice = createSlice({
@@ -12,10 +10,12 @@ const CartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      state.item = action.payload;
-      // state.push(action.payload);
+      // state.cart = action.payload;   this for first time means it will add only one item not all
+      state.cart.push(action.payload);
     },
-    removeItemFromCart: (state, action) => {},
+    removeItemFromCart: (state, action) => {
+      state.cart.filter((item) => item.id !== action.payload);
+    },
     removeItemAllCart: (state, action) => {},
   },
 });

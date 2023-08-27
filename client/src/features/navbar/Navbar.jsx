@@ -8,10 +8,14 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaPersonDress } from "react-icons/fa6";
 // import { FaMobileRetro } from "react-icons/fa";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [isSliderOpen, setIsSliderOpen] = useState(false);
   const [isCategoryOpen, setIsCategorOpen] = useState(true);
+
+  const cartQuantity = useSelector((state) => state.allCart)
+  console.log(cartQuantity);
 
   return (
     <nav className="navbar">
@@ -40,7 +44,7 @@ const Navbar = () => {
           </Link>
           <Link to={"/cart"} className="cart">
             <span className="flex justify-center items-center text-2xl bg-primary">
-              0
+              {cartQuantity.length}
             </span>
             <BsCart size={30} />
           </Link>

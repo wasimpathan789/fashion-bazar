@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./ProductCard.css";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../features/cart/CartSlice";
+// import { addToCart } from "../features/cart/CartSlice";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ title, price, image, user }) => {
   const [filled, setFilled] = useState(false);
@@ -25,18 +26,19 @@ const ProductCard = ({ title, price, image, user }) => {
         <span>rating</span>
         <div className="w-full flex items-center justify-center mt-6 pointer">
           <button
-            onClick={(user) =>
-              dispatch(
-                addToCart({
-                  title,
-                  price,
-                  image,
-                })
-              )
-            }
+            // onClick={(user) =>
+            //   dispatch(
+            //     addToCart({
+            //       title,
+            //       price,
+            //       image
+            //     })
+            //   )
+            // }
             className="bg-primary w-full py-4 poppins text-md "
           >
-            Add to Cart
+            <Link to={"/productdetails"} > Buy Online</Link>
+
           </button>
         </div>
       </div>

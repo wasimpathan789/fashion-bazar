@@ -1,7 +1,7 @@
 import React from "react";
 import PageBanner from "../component/PageBanner";
 import Layout from "../layout/Layout";
-import Cart from "../features/cart/Cart";
+import Cart from "../features/cart/components/Cart";
 
 const Cartpage = () => {
   return (

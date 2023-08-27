@@ -1,53 +1,16 @@
 import "./Cart.css";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import laptop from "../../assets/laptop.jpg";
+import laptop from "../../../assets/laptop.jpg";
 import { FiTrash2 } from 'react-icons/fi'
+import { useDispatch, useSelector } from "react-redux";
+import { removeItemFromCart } from "../CartSlice";
 
 const Cart = () => {
-    const data = [
-        {
-            id: 1,
-            productName: "Mens t-shirt",
-            color: "red",
-            size: "xl",
-            price: "500",
-            img: laptop
-        },
-        {
-            id: 2,
-            productName: "Mens t-shirt",
-            color: "red",
-            size: "xl",
-            price: "500",
-            img: laptop
-        },
-        {
-            id: 3,
-            productName: "Mens t-shirt",
-            color: "red",
-            size: "xl",
-            price: "500",
-            img: laptop
-        },
-        {
-            id: 4,
-            productName: "Mens t-shirt",
-            color: "red",
-            size: "xl",
-            price: "500",
-            img: laptop
-        },
-        {
-            id: 5,
-            productName: "Mens t-shirt",
-            color: "red",
-            size: "xl",
-            price: "500",
-            img: laptop
-        },
-    ];
-    const [accordian, setAccordian] = useState(false);
+    const dispatch = useDispatch();
+
+
+    const { cart } = useSelector((state) => state.allCart);
     return (
         <div className="cart-container flex flex-col gap-4 ">
             {/*  product table  */}
@@ -62,15 +25,15 @@ const Cart = () => {
                     <div className="third">Price</div>
 
                 </div>
-                {data.map((el, id) => (
+                {cart.map((el, id) => (
                     <div key={id} className="table-content flex  ">
                         <div className="first">{el.id}</div>
-                        <div className="second second-img"> <img src={el.img} alt="" /> <span>{el.productName}</span></div>
+                        <div className="second second-img"> <img src={el.image} alt="" /> <span>{el.title}</span></div>
                         <div className="third">{el.size}</div>
                         <div className="third">{el.color}</div>
                         <div className="third">{el.price}</div>
                         <div className="third">Quantity</div>
-                        <div className="third pointer "><FiTrash2 size={22} /></div>
+                        <div onClick={() => dispatch(removeItemFromCart(id))} className="third pointer "><FiTrash2 size={22} /></div>
 
                     </div>
                 ))}
@@ -79,7 +42,7 @@ const Cart = () => {
 
             {/* mobile table  */}
             <div className="m-table">
-                {data.map((elem, id) => (
+                {cart.map((elem, id) => (
                     <div key={id} className="m-table-wrapper py-4 px-4 mt-4 ">
                         <div className="m-table-row flex items-center justify-between py-4 w-full ">
                             <p className="poppins text-lg">Sr. No.</p>

@@ -6,14 +6,27 @@ const initialState = {
   isLoading: false,
   isError: false,
   data: [],
+  selectedProduct: null,
 };
 
 // get api call
+// const API_KEY = process.env.REACT_API_KEY;
+const API_KEY = "http://localhost:3004/products ";
+const NEW_KEY = "http://localhost:3004/";
+
 export const fetchProductsAll = createAsyncThunk(
   "fetchProductsAll",
   async () => {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch(API_KEY);
+
     return response.json();
+  }
+);
+export const fetchProductById = createAsyncThunk(
+  "fetchProductById",
+  async (id) => {
+    const response = await fetch(`http://localhost:3004/products/ ${id}`);
+    return response.data;
   }
 );
 
@@ -30,6 +43,16 @@ const productSlice = createSlice({
       state.data = action.payload;
     });
     builder.addCase(fetchProductsAll.rejected, (state, action) => {
+      state.isError = true;
+    });
+    builder.addCase(fetchProductById.pending, (state, action) => {
+      state.isLoading = true;
+    });
+    builder.addCase(fetchProductById.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.selectedProduct = action.payload;
+    });
+    builder.addCase(fetchProductById.rejected, (state, action) => {
       state.isError = true;
     });
   },

@@ -92,6 +92,9 @@ a, li {
   background-color: #d3efff;
 
 }
+.uppercase{
+  text-transform: uppercase;
+}
 
 .flex {
   display: flex;
@@ -257,6 +260,19 @@ a, li {
 .text-4xl {
   font-size: 2.25rem; /* 36px */
   line-height: 2.5rem; /* 40px */
+}
+
+.font-normal{
+  font-weight: 400;
+}
+.font-medium{
+  font-weight: 500;
+}
+.font-semibold{
+  font-weight: 600;
+}
+.font-bold{
+  font-weight: 700;
 }
 .poppins {
   font-family: "Poppins", sans-serif;
