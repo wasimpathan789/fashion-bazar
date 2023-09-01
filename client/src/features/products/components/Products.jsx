@@ -4,7 +4,7 @@ import ReactStars from "react-stars";
 
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProductsAll, selectAllProducts } from "../productSlice";
-import Star from "../../../component/Star";
+// import Star from "../../../component/Star";
 import ProductCard from "../components/ProductCard";
 
 const Products = () => {
@@ -34,6 +34,7 @@ const Products = () => {
                 title={user.title.slice(0, 50)}
                 user={user}
                 key={id}
+                id={id}
               />
             ))}
           </div>

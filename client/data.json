@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "title": "iPhone 9",
+      "title": "iPhone 90",
       "description": "An apple mobile which is nothing like apple",
       "price": 993,
       "discountPercentage": 12.96,
@@ -49,9 +49,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ],
+      "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
       "deleted": true
     },
     {
@@ -1429,9 +1427,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"]
     },
     {
       "id": 79,
@@ -1444,9 +1440,7 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/79/1.jpg"
-      ]
+      "images": ["https://i.dummyjson.com/data/products/79/1.jpg"]
     },
     {
       "id": 80,
@@ -1844,7 +1838,7 @@
       "title": "Mac Book Air ",
       "description": "Mac Book Air ",
       "brand": "Apple",
-      "category": "laptops",
+      " ": "laptops",
       "price": 1111,
       "discountPercentage": 11,
       "stock": 22,
@@ -2250,106 +2244,123 @@
       "checked": false
     }
   ],
+
   "categories": [
     {
+      "id": "cate01",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "smartphones",
-      "label": "smartphones",
-      "checked": false
+      "label": "smartphones"
     },
     {
+      "id": "cate02",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "laptops",
-      "label": "laptops",
-      "checked": false
+      "label": "laptops"
     },
     {
+      "id": "cate03",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "fragrances",
-      "label": "fragrances",
-      "checked": false
+      "label": "fragrances"
     },
     {
+      "id": "cate04",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "skincare",
-      "label": "skincare",
-      "checked": false
+      "label": "skincare"
     },
     {
+      "id": "cate05",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "groceries",
-      "label": "groceries",
-      "checked": false
+      "label": "groceries"
     },
     {
-      "value": "home-decoration",
-      "label": "home decoration",
-      "checked": false
-    },
-    {
+      "id": "cate06",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "furniture",
-      "label": "furniture",
-      "checked": false
+      "label": "furniture"
     },
     {
+      "id": "cate07",
+      "image": "https://picsum.photos/640/640?r=6349",
+      "value": "home-decoration",
+      "label": "home decoration"
+    },
+    {
+      "id": "cate08",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "tops",
-      "label": "tops",
-      "checked": false
+      "label": "tops"
     },
     {
+      "id": "cate09",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "womens-dresses",
-      "label": "womens dresses",
-      "checked": false
+      "label": "womens dresses"
     },
+
     {
+      "id": "cate11",
+      "image": "https://picsum.photos/640/640?r=6349",
+
       "value": "womens-shoes",
-      "label": "womens shoes",
-      "checked": false
+      "label": "womens shoes"
     },
     {
+      "id": "cate12",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "mens-shirts",
-      "label": "mens shirts",
-      "checked": false
+      "label": "mens shirts"
     },
     {
+      "id": "cate13",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "mens-shoes",
-      "label": "mens shoes",
-      "checked": false
+      "label": "mens shoes"
     },
     {
+      "id": "cate14",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "mens-watches",
-      "label": "mens watches",
-      "checked": false
+      "label": "mens watches"
     },
     {
+      "id": "cate15",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "womens-watches",
-      "label": "womens watches",
-      "checked": false
+      "label": "womens watches"
     },
     {
+      "id": "cate16",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "womens-bags",
-      "label": "womens bags",
-      "checked": false
+      "label": "womens bags"
     },
     {
+      "id": "cate17",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "womens-jewellery",
-      "label": "womens jewellery",
-      "checked": false
+      "label": "womens jewellery"
     },
     {
+      "id": "cate18",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "sunglasses",
-      "label": "sunglasses",
-      "checked": false
+      "label": "sunglasses"
     },
     {
+      "id": "cate19",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "automotive",
-      "label": "automotive",
-      "checked": false
+      "label": "automotive"
     },
     {
-      "value": "motorcycle",
-      "label": "motorcycle",
-      "checked": false
-    },
-    {
+      "id": "cate10",
+      "image": "https://picsum.photos/640/640?r=6349",
       "value": "lighting",
-      "label": "lighting",
-      "checked": false
+      "label": "lighting"
     }
   ],
   "users": [
@@ -2566,9 +2577,7 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/3/1.jpg"
-          ],
+          "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
           "quantity": 2,
           "user": 2
         },
@@ -2826,9 +2835,7 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/3/1.jpg"
-          ],
+          "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
           "quantity": 1,
           "user": 2,
           "id": 1
@@ -2897,9 +2904,7 @@
           "brand": "Samsung",
           "category": "smartphones",
           "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "images": [
-            "https://i.dummyjson.com/data/products/3/1.jpg"
-          ],
+          "images": ["https://i.dummyjson.com/data/products/3/1.jpg"],
           "quantity": 1,
           "user": 2,
           "id": 1

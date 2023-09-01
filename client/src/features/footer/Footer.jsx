@@ -27,7 +27,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className=" mt-4 ">
-              <Link to={"/productdetails"} className="gray ">
+              <Link to={"/productdetailspage"} className="gray ">
                 Kids Shopping
               </Link>
             </li>

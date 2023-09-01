@@ -12,7 +12,7 @@ import SignUp from "./features/auth/components/SignUp";
 import Cartpage from "./pages/Cartpage";
 import New from "./pages/New";
 import ProductDetailsPage from './pages/ProductDetailsPage'
-import ProductDetails from "./features/products/components/ProductDetails";
+// import ProductDetails from "./features/products/components/ProductDetails";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/*" element={<PageNotFound />} />
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/cart" element={<Cartpage />} />
-        <Route path="/productdetails" element={<ProductDetails />} />
+        {/* <Route path="/productdetails" element={<ProductDetails />} /> */}
         <Route path="/productdetailspage" element={<ProductDetailsPage />} />
 
         <Route path="/b" element={<New />} />

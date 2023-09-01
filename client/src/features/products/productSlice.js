@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { BASE_URL } from "../../utlis/apiUrl";
 
 // make a iniitial state
 
@@ -11,13 +12,11 @@ const initialState = {
 
 // get api call
 // const API_KEY = process.env.REACT_API_KEY;
-const API_KEY = "http://localhost:3004/products ";
-const NEW_KEY = "http://localhost:3004/";
 
 export const fetchProductsAll = createAsyncThunk(
   "fetchProductsAll",
   async () => {
-    const response = await fetch(API_KEY);
+    const response = await fetch(`${BASE_URL}products/`);
 
     return response.json();
   }
@@ -25,7 +24,7 @@ export const fetchProductsAll = createAsyncThunk(
 export const fetchProductById = createAsyncThunk(
   "fetchProductById",
   async (id) => {
-    const response = await fetch(`http://localhost:3004/products/ ${id}`);
+    const response = await fetch("http://localhost:3030/products/2" + id);
     return response.data;
   }
 );

@@ -15,7 +15,7 @@ const Navbar = () => {
   const [isCategoryOpen, setIsCategorOpen] = useState(true);
 
   const cartQuantity = useSelector((state) => state.allCart)
-  console.log(cartQuantity);
+  // console.log(cartQuantity);
 
   return (
     <nav className="navbar">

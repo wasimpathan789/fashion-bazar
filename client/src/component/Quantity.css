@@ -1,0 +1,10 @@
+.quantity-container {
+  border: 0.5px solid #ffbb38;
+}
+.quantity-container > button {
+  border-radius: 0%;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  /* width: 100%; */
+}

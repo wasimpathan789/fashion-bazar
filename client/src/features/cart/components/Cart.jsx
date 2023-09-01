@@ -5,6 +5,7 @@ import laptop from "../../../assets/laptop.jpg";
 import { FiTrash2 } from 'react-icons/fi'
 import { useDispatch, useSelector } from "react-redux";
 import { removeItemFromCart } from "../CartSlice";
+import Quantity from "../../../component/Quantity";
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const Cart = () => {
                         <div className="third">{el.size}</div>
                         <div className="third">{el.color}</div>
                         <div className="third">{el.price}</div>
-                        <div className="third">Quantity</div>
+                        <div className="third"><Quantity /></div>
                         <div onClick={() => dispatch(removeItemFromCart(id))} className="third pointer "><FiTrash2 size={22} /></div>
 
                     </div>
