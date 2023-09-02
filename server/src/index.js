@@ -1,41 +1,46 @@
 const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
-
 const app = express();
-const API_URL = "http://localhost:3030/api";
-const DB_URL = "mongodb://127.0.0.1:27017/fashionBazar";
+const morgan = require("morgan");
+const mongoose = require("mongoose");
+const cors = require("cors");
+require("dotenv").config();
+// require("dotenv/config");
+// const authJwt = require("./helpers/jwt");
+const errorHandler = require("./helpers/error-handler");
+
+app.use(cors());
+app.options("*", cors());
+
+//middleware
+app.use(express.json());
+app.use(morgan("tiny"));
+// app.use(authJwt());
+app.use("/public/uploads", express.static(__dirname + "/public/uploads"));
+app.use(errorHandler);
+
+const MONGO = "mongodb://127.0.0.1:27017/fashionBazar";
+// const MONGO = process.env.DB_URL;
+// const API_URL = "http://localhost:3030/api";
+// const api = process.env.API_URL;
+
+const api = "http://localhost:3030/api";
+
 const PORT = 3030;
 
-// middleware
-app.use(cors());
-app.use(express.json());
-app.use(bodyParser.json());
-app.use(morgan("tiny"));
-
-// Routes
-const productsRoutes = require("./routes/productsRoute");
+//Routes
 const categoriesRoutes = require("./routes/categoriesRoutes");
-const ordersRoutes = require("./routes/ordersRoutes");
+const productsRoutes = require("./routes/productsRoute");
 const usersRoutes = require("./routes/usersRoutes");
+const ordersRoutes = require("./routes/ordersRoutes");
 
-app.use(productsRoutes);
-app.use(categoriesRoutes);
-// app.use(ordersRoutes);
-// app.use(usersRoutes);
-
-// app.use(`${API_URL}/products`, productsRoutes);
-
-// app.use(`${API_URL}/categories`, categoriesRoutes);
-// app.use(`${API_URL}/orders`, ordersRoutes);
-// app.use(`${API_URL}/users`, usersRoutes);
+app.use(`${api}/categories`, categoriesRoutes);
+app.use(`${api}/products`, productsRoutes);
+app.use(`${api}/users`, usersRoutes);
+app.use(`${api}/orders`, ordersRoutes);
 
 // db connection
-
 mongoose
-  .connect(DB_URL, {
+  .connect(MONGO, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -44,10 +49,7 @@ mongoose
   })
   .catch((err) => console.log("Db not Connected"));
 
+// Server
 app.listen(PORT, () => {
   console.log("server is listening");
 });
-
-// app.get(PORT, (req, res) => {
-//   res.send("http://localhost:3030/api");
-// });
