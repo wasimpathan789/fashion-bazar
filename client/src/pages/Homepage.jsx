@@ -13,22 +13,11 @@ import laptop from "../assets/laptop.jpg";
 const Homepage = () => {
   const [users, setUsers] = useState([])
 
-  const fetchData = () => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => {
-        return response.json()
-      })
-      .then(data => {
-        setUsers(data)
-        console.log(data)
-
-
-
-      })
-  }
 
   useEffect(() => {
-    fetchData()
+    fetch("https://potter-db-api.herokuapp.com/v1/movies")
+      .then(res => res.json())
+      .then(data => setUsers(data.data))
 
 
   }, [])
