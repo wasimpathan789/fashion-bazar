@@ -16,7 +16,10 @@ const initialState = {
 export const fetchProductsAll = createAsyncThunk(
   "fetchProductsAll",
   async () => {
-    const response = await fetch(`${BASE_URL}products/`);
+    // const response = await fetch(`${BASE_URL}products/`);
+    const response = await fetch(
+      "https://potter-db-api.herokuapp.com/v1/movies"
+    );
 
     return response.json();
   }

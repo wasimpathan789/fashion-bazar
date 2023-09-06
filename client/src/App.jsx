@@ -12,6 +12,11 @@ import SignUp from "./features/auth/components/SignUp";
 import Cartpage from "./pages/Cartpage";
 import New from "./pages/New";
 import ProductDetailsPage from './pages/ProductDetailsPage'
+import AdminPage from "./pages/AdminPage";
+import AdminDashboard from "./features/admin/components/AdminDashboard";
+import AdminCreateProduct from "./features/admin/components/AdminCreateProduct";
+import AdminOrders from "./features/admin/components/AdminOrders";
+import AdminCategory from "./features/admin/components/AdminCategory";
 // import ProductDetails from "./features/products/components/ProductDetails";
 
 function App() {
@@ -24,6 +29,22 @@ function App() {
         <Route path="/cart" element={<Cartpage />} />
         {/* <Route path="/productdetails" element={<ProductDetails />} /> */}
         <Route path="/productdetailspage" element={<ProductDetailsPage />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/best" element={<AdminCreateProduct />} />
+
+        {/* <Route path="/adminDashboard" element={<AdminDashboard />}>
+          <Route path="/addProduct" element={<AdminCreateProduct />} />
+          <Route path="/adminOrder" element={<AdminOrders />} />
+
+        </Route> */}
+        <Route path="/adminOrder" element={<AdminOrders />} />
+        <Route path="/admindashboard" element={<AdminDashboard />} />
+        <Route path="/adminCreateProduct" element={<AdminCreateProduct />} />
+        <Route path="/adminCategory" element={<AdminCategory />} />
+
+
+
+
 
         <Route path="/b" element={<New />} />
 

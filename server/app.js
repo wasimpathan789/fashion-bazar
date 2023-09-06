@@ -45,5 +45,5 @@ mongoose
 
 // Server
 app.listen(3030, () => {
-  console.log("server is listening 30000.......");
+  console.log("server is listening 3030");
 });

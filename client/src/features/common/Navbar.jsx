@@ -6,6 +6,7 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaPersonDress } from "react-icons/fa6";
+import { GrUserAdmin } from 'react-icons/gr'
 // import { FaMobileRetro } from "react-icons/fa";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -48,8 +49,11 @@ const Navbar = () => {
             </span>
             <BsCart size={30} />
           </Link>
-          <Link className="user-login">
+          <Link to={"user-login"} className="user-login">
             <AiOutlineUser size={30} />
+          </Link>
+          <Link to={"admin"} className="user-login">
+            <GrUserAdmin size={30} />
           </Link>
         </div>
       </div>

@@ -3,21 +3,26 @@ import React, { useEffect, useState } from "react";
 // pages 
 import Layout from "../layout/Layout";
 import Products from "../features/products/components/Products";
-import Category from '../features/category/components/Category'
+// import Category from '../features/category/components/Category'
 
 // icons
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 import laptop from "../assets/laptop.jpg";
+import AdminCreateProduct from "../features/admin/components/AdminCreateProduct";
+import { useDispatch, useSelector } from "react-redux";
 
 const Homepage = () => {
   const [users, setUsers] = useState([])
+  // const cat = useSelector((state) => state.adminCategory.data)
+  const dispatch = useDispatch()
 
 
   useEffect(() => {
-    fetch("https://potter-db-api.herokuapp.com/v1/movies")
-      .then(res => res.json())
-      .then(data => setUsers(data.data))
+    // fetch("https://potter-db-api.herokuapp.com/v1/movies")
+    //   .then(res => res.json())
+    //   .then(data => setUsers(data.data))
+
 
 
   }, [])
@@ -48,18 +53,11 @@ const Homepage = () => {
         </div> */}
 
 
-        <Products />
         <div>
-          <p>data</p>
-          {
-            users.map((el, id) => (
-              <li>
-                {el.title}
-              </li>
-            ))
-          }
-
+          hey
         </div>
+
+        <Products />
       </div>
     </Layout>
   );

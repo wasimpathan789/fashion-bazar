@@ -1,0 +1,24 @@
+/* admin sidebar  */
+.admin-sidebar {
+  width: 240px;
+  padding: 20px 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 1px 0px 0px;
+}
+.admin-sidebar-items {
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.admin-sidebar-items > a :hover {
+  border: 2px solid purple;
+  padding: 8px 8px;
+  border-radius: 10px;
+}
+
+/* admin categories  */
+/* .categories-table {
+ 
+} */
+.category-sr-no {
+  width: 60px;
+}
